@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.FormActivity"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/tv_heading_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email Validation"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_below="@+id/tv_heading_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_heading_alpha"
+            android:layout_below="@+id/et_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Text area without Special Characters"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/et_alphanumeric"
+            android:layout_below="@+id/tv_heading_alpha"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:digits="0123456789qwertzuiopasdfghjklyxcvbnm "/>
+
+        <CheckBox
+            android:id="@+id/cb_form"
+            android:layout_below="@+id/et_alphanumeric"
+            android:text="CheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btn_activity"
+            android:layout_below="@+id/cb_form"
+            android:text="Next Activity"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/purple_200"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
